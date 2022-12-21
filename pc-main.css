@@ -1,0 +1,153 @@
+@media only screen and (min-width: 800px){
+.container{ 
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 1000px;
+	height: 100vh;
+
+}
+/***************************************************/
+                   /* NAV BAR */
+/***************************************************/
+.navbar{
+top: 0;
+bottom: auto;
+justify-content: flex-end;
+}
+
+.nav-content{
+border-top: 0;
+box-shadow: 0 1px 8px -2px #323232;
+}
+
+.navbar nav ul li a{
+font-size: 17px;
+padding: 0;
+}
+
+.navbar nav ul li{
+	width: 100px;
+	height: 50px;
+	position: relative;
+
+}
+
+.navbar nav ul li::before {
+	position: absolute;
+	content: '';
+	width: 80px;
+	height: 0;
+	background: #323223;
+	bottom: 0;
+	transition: .2s ease;
+}
+.navbar nav ul li:hover::before{
+height: 3px;
+}
+
+.navbar nav ul{
+    height: auto;
+	justify-content: flex-end;
+}
+#down{
+	display: none;
+}
+#li-home{
+	background: none;  
+}
+#home{
+    color: #323232;
+}
+#home::after{
+	content: 'Home';
+}
+#profile::after{
+	content: 'About';
+}#studies::after{
+	content: 'Resume';
+}
+#message::after{
+	content: 'Contact';
+}
+.navbar .bx{
+	display: none;
+}
+/***************************************************/
+              /* SOCIAL MEDIA LINKS */
+/***************************************************/
+.main-link{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+
+}
+.main-link ul{
+width: auto;
+height: auto;
+display: grid;
+right: 0;
+}
+
+.main-link ul::after{
+content: '';
+width: 0;
+height: 50px;
+margin-left: 50%;
+}
+.main-link ul::before{
+display: none;
+}
+/***************************************************/
+                   /* PROFILE */
+/***************************************************/
+.main-content-home{
+	display: grid;
+	grid-template-columns: 300px 600px 100px; 
+	height: 100%;
+	border: 1px solid red;
+	align-items: center;
+	
+}
+.name-des-pc{
+	width: 100%;
+	display: grid;
+	grid-template-rows: : 87px 87px 87px;
+}
+.profile-img{
+	width: 50%;
+	margin: 0;
+	display: block;
+
+}
+.profile{
+	width: 250px;
+
+
+}
+.profile-name{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+.description{
+color: #323232;
+width: 100%;
+height: auto;
+display: block;
+font-size: 20px;
+margin-top: 20px;
+}
+.description{
+justify-content: flex-start;
+}
+
+
+
+
+
+
+}
